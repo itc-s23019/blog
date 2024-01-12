@@ -17,5 +17,4 @@ const PostHeader = ({ title, subtitle, publish = '' }) => {
     </div>
   )
 }
-
 export default PostHeader
