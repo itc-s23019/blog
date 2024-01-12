@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 // サイトに関する情報
 import { siteMeta } from 'lib/constants'
+import siteImg from 'images/ogp.jpg'
 const {
   siteTitle,
   siteDesc,
@@ -13,7 +14,6 @@ const {
 } = siteMeta
 
 // 凡用OGP画像
-import siteImg from 'next-react-website/blog-app-router/images/ogp.jpg'
 
 const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
   const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle
