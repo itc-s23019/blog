@@ -13,14 +13,14 @@ import ConvertBody from 'components/convert-body'
 import PostCategories from 'components/post-categories'
 import Image from 'next/image'
 
-const Schedule = ({
+export default function Schedule ({
   title,
   publish,
   content,
   eyecatch,
   categories,
   description
-}) => {
+}) {
   return (
     <Container>
       <Meta
@@ -59,7 +59,6 @@ const Schedule = ({
     </Container>
   )
 }
-export default Schedule
 
 export async function getStaticProps () {
   const slug = 'schedule'
@@ -73,7 +72,7 @@ export async function getStaticProps () {
       content: post.content,
       eyecatch: post.eyecatch,
       categories: post.categories,
-      description
+      dedcription: description
     }
   }
 }
